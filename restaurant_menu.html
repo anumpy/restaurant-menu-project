@@ -1,0 +1,211 @@
+<!-- HTML Final Project: Restaurant Menu -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .input-field {
+                width: 50px;
+            }
+            .container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .container article {
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+            }
+            form {
+                text-align: center;
+                padding: 20px;
+                margin: 20px;
+            }
+            input[type="submit"] {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #000000;
+                color: white;
+            }
+            .horizontal-list {
+                display: flex;
+                justify-content: flex-start;
+                list-style-type: none;
+            }
+            .horizontal-list li {
+                text-align: left;
+                margin-right: 30px;
+            }
+            .list-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            footer {
+                text-align: center;
+                background-color: #b15b21;
+                color: white;
+                width: 100%;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #fce3de; 
+                color: #974d12;
+            }
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                background-color: #b15b21;
+                width: 100%;
+                margin: 0;
+                box-sizing: border-box;
+                color: white;
+            }
+            #header-img {
+                margin-right: 20px;
+            }
+            nav ul {
+                display: flex;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            nav ul li {
+                margin-left: 20px;
+            }
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+            }
+            nav ul li a:hover {
+                color: #000000;
+            }
+            .fieldset-one {
+                background-color: #d28857;
+                color: white;
+                padding: 10px;
+                border: 10px solid #552706;
+            }
+            .fieldset-two {
+                background-color: #974d12;
+                color: white;
+                padding: 10px;
+                border: 10px solid #552706;
+            }
+        </style>
+        <title>Ta'ameya Treats</title>
+    </head>
+    <body>
+        <header>
+            <img id="header-img" width="100px" src="Taameya Treats.jpg" alt="restautant-logo" />
+            <h1>Ta'ameya Treats</h1>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order-form">Order Form</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br/>
+        <main>
+            <section id="menu">
+                <h2>Menu</h2>
+                <div class="container">
+                    <fieldset class="fieldset-one">
+                        <article>
+                            <img width="300px" src="PHOTO-2024-09-06-17-55-27.jpg" alt="taameya-sandwich" />
+                            <h3>Ta'ameya Sandwich</h3>
+                            <p>
+                                Crispy Egyptian falafel, perfectly fried to golden perfection.
+                                Served with fresh salads and a drizzle of tahini sauce.
+                                A must-try you won't want to miss!<br/><br/>
+                                <b>Price: </b><i>$7.90</i>
+                            </p>
+                        </article>
+                    </fieldset>
+                    <fieldset class="fieldset-two">
+                        <article>
+                            <img width="300px" src="PHOTO-2024-09-06-17-55-56.jpg" alt="taameya-burger" />
+                            <h3>Ta'ameya Burger</h3>
+                            <p>
+                                Our signature Egyptian falafel, fused with a burger twist.
+                                Crispy falafel patties layered with fresh greens, tahini sauce, and a touch of spice, all nestled in a soft bun.
+                                We bet you're going to love it!<br/><br/>
+                                <b>Price: </b><i>$8.90</i>
+                            </p>
+                        </article>
+                    </fieldset>
+                    <fieldset class="fieldset-one">
+                        <article>
+                            <img width="300px" src="PHOTO-2024-09-06-17-56-14.jpg" alt="taameya-pizza" />
+                            <h3>Ta'ameya Pizza</h3>
+                            <p>
+                                Enjoy our falafel pizza with crispy Egyptian falafel, fresh greens, and a tahini drizzle on a cheesy tomato base.
+                                Perfectly crafted to serve four, it's a fusion you'll love!<br/><br/>
+                                <b>Price: </b><i>$12.90</i>
+                            </p>
+                        </article>
+                    </fieldset>
+                </div>
+            </section>
+            <br/>
+            <section id="order-form">
+                <h2>Place Your Order</h2>
+                <form>
+                    <fieldset class="fieldset-two">
+                        <div class="list-container">
+                            <h4>Choose your meal:</h4>
+                            <ul class="horizontal-list">
+                                <li><label for="sandwich">Ta'ameya Sandwich </label><input type="number" min="0" id="sandwich" value="sandwich" class="input-field" required /></li>
+                                <li><label for="burger">Ta'ameya Burger </label><input type="number" min="0" id="burger" value="burger" class="input-field" required /></li>
+                                <li><label for="pizza">Ta'ameya Pizza </label><input type="number" min="0" id="pizza" value="pizza" class="input-field" required /></li>
+                            </ul>
+                            </br>
+                        </div>
+                        <div class="list-container">
+                            <h4>Make it a meal:</h4>
+                            <ul class="horizontal-list">
+                                <li><input type="radio" name="meal" id="yes" value="yes" /><label for="yes"> Yes - <i>$3</i></label></li>
+                                <li><input type="radio" name="meal" id="no" value="no" /><label for="no"> No</label></li>                      
+                            </ul>
+                            <br/>
+                        </div>
+                        <div class="list-container">
+                            <h4>Choose your add-ons:</h4>
+                            <ul class="horizontal-list">
+                                <li><input type="checkbox" name="tomato" id="tomato" value="tomato" /><label for="tomato"> More Tomatoes - <i>$2</i></label></li>
+                                <li><input type="checkbox" name="tahini" id="tahini" value="tahini" /><label for="tahini"> Tahini Sauce - <i>$1</i></label></li>
+                                <li><input type="checkbox" name="fries" id="fries" value="fries" /><label for="fries"> Fries - <i>$2</i></label></li>
+                                <li><input type="checkbox" name="taameya" id="taameya" value="taameya" /><label for="taameya"> Double the Ta'ameya - <i>$2</i></label>
+                            </ul>
+                            </br>
+                        </div>
+                        <div>
+                            <label for="request"><h4>Special Request:</h4></label>
+                            <textarea name="request" id="request" rows="7" cols="42" placeholder="Write your request here" maxlength="250"></textarea>
+                        <br/>
+                        </div>
+                        <div>
+                            <input type="submit" />
+                        </div>
+                    </fieldset>
+                </form>
+                <br/>
+            </section>
+        </main>
+        <footer>
+            <p>Made with love by anumpy</p>
+        </footer>
+    </body>
+</html>
